@@ -1,0 +1,94 @@
+basic:
+    name: unicef.ca
+    environments:
+        production: 'https://www.unicef.ca'
+        staging: 'https://da-updates-uca.pantheonsite.io'
+        development: ''
+    breakpoints:
+        - 1032
+    pages:
+        - /en
+        - /fr
+        - /en/about-unicef
+        - /fr/article/%C3%A0-propos-de-nous-0
+        - /en/what-we-do/emergency-appeals
+        - /fr/decouvrez/appels-durgence
+        - /en/donate-now/article/become-a-monthly-donor
+        - /fr/get-involved-fr/article/devenez-parent-du-monde
+        - /en/financial-accountability
+        - /fr/responsabilite-financiere
+        - /en/unicef-canadas-executive-team
+        - /fr/haute-direction
+        - /en/contact
+        - /fr/ecrivez-nous
+        - /en/support-children-and-families-ukraine
+        - /fr/venez-en-aide-aux-enfants-et-aux-familles-en-ukraine
+        - /en/unicefs-work-canada
+        - /fr/le-travail-de-lunicef-au-canada
+        - /en/u-report
+        - /fr/u-report
+        - /en/child-rights-legislation-tracker
+        - /fr/suivi-des-lois-sur-les-droits-des-enfants
+        - /en/campaigns-and-programs-results
+        - /fr/resultats-des-campagnes-et-des-programmes
+        - /en/blog
+        - /fr/blog
+        - /en/press-releases
+        - /fr/communiques-de-presse
+        - /en/about-unicefs-fundraising-partners
+        - /fr/propos-des-partenaires-de-collecte-de-fonds-de-lunicef
+        - /en/policy-advocacy-for-children/about-the-convention-on-the-rights-of-the-child
+        - "/fr/discover-fr/article/a-propos-d'une-gouvernance-axee-sur-les-enfants"
+        - /en/blog/ten-things-you-didnt-know-about-child-labour
+        - /fr/blog/dix-choses-que-vous-ignoriez-propos-du-travail-des-enfants
+        - /en/discover/education
+        - /fr/education
+        - /en/donate/rohingya-refugee-crisis-relief-fund
+        - /en/what-we-do/donate-to-syria
+        - /en/donate/article/annual-unicef-water-for-life-gala-calgary-event
+        - /en/monthly-donor-impact-2022
+        - '/en/search?search=test'
+        - '/fr/rechercher?search=test'
+        - /en/for-every-child-unicef-canada-podcast
+        - /en/content-component-reference
+    monitoring:
+        days: {  }
+        type: ''
+        schedule_time: '01:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    delay: 15
+    scroll: true
+    headers:
+        - { value: '1', header: Deterrence-Bypass }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content:
+        - { type: title, selector: '' }
+    sensitivity: 15
+    night_mode: false
+    retina_images: false
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
+proxy: false
+type: single-site
