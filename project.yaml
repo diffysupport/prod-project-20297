@@ -4,6 +4,10 @@ basic:
         production: 'https://www.unicef.ca'
         staging: 'https://da-updates-uca.pantheonsite.io'
         development: ''
+    basicAuth:
+        production: { user: '', password: '' }
+        staging: { user: capellic, password: capellic }
+        development: { user: '', password: '' }
     breakpoints:
         - 1032
     pages:
@@ -60,7 +64,7 @@ basic:
         compare_with_fresh: production
 advanced:
     mask: ''
-    remove: ''
+    remove: .cky-consent-container
     delay: 15
     scroll: true
     headers:
@@ -73,6 +77,7 @@ advanced:
     sensitivity: 15
     night_mode: false
     retina_images: false
+    single_ip: false
     login:
         type: none
         click_element: false
@@ -90,5 +95,3 @@ advanced:
         workers_production_delay: 0
         workers_nonproduction_delay: 0
     stabilize: true
-proxy: false
-type: single-site
